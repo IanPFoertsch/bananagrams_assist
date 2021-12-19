@@ -9,8 +9,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
-    watchContentBase: true,
-    contentBase: path.join(__dirname, 'dist'),
+    // watchContentBase: true,
+    static: path.join(__dirname, 'dist'),
     compress: true,
     port: 9000
   }
