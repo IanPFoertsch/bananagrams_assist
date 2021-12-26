@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html>
 	<head>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
 		<meta charset="utf-8">
 		<title>My first three.js app</title>
 	</head>
 	<body>
     <input type="text" id="letterset_input" name="letterset_input">
+    <table id="wordset_results" name="wordset_results">
+      <tr>
+        <th>Words Fitting Letter Set</th>
+      </tr>
+    </table>
     <script src="main.js"></script>
 	</body>
 </html>
